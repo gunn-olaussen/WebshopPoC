@@ -4,12 +4,19 @@
     // File Layout
     // "rootDir": "./src",
     // "outDir": "./dist",
+    "paths": {
+      "@fixtures/*": [ "./fixtures/*" ],
+      "@pages": [ "./pages/index.ts" ],
+      "@pages/*": [ "./pages/*" ],
+      "@data/*": [ "./data/*" ],
+      "@lib/*": [ "./lib/*" ],
+    },
 
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
     "module": "nodenext",
     "target": "esnext",
-    "types": [],
+    "types": [ "node" ],
 
     // Other Outputs
     "sourceMap": true,

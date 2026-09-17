@@ -1,10 +1,9 @@
-import dotenv from 'dotenv';
 import { defineConfig, devices } from '@playwright/test';
 
 /**
  * Read environment variables from file.
  */
-dotenv.config({ quiet: true });
+// dotenv.config({ quiet: true });
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -24,7 +23,7 @@ export default defineConfig({
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
-    baseURL: 'https://advantageonlineshopping.com',
+    baseURL: 'https://advantageonlineshopping.com/#/',
     trace: 'on-first-retry',
   },
 
@@ -43,10 +42,10 @@ export default defineConfig({
     //   use: { ...devices['Desktop Safari'] },
     // },
     /* Test against mobile viewports. */
-    {
-      name: 'mobileS',
-      use: { ...devices['iPhone 12'] },
-    },
+    // {
+    //   name: 'mobileS',
+    //   use: { ...devices['iPhone 12'] },
+    // },
     // {
     //   name: 'mobileC',
     //   use: { ...devices['Pixel 5'] },
