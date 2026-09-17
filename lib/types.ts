@@ -1,0 +1,15 @@
+export type UserInformation = {
+    username: string,
+    password: string,
+    email: string,
+    firstName?: string,
+    lastName?: string,
+    phone?: string,
+    country?: string,
+    city?: string,
+    address?: string,
+    state?: string,
+    postcode?: number,
+    receiveOffers?: boolean,
+    agreeTerms: boolean,
+}
